@@ -34,7 +34,7 @@ schema_view = get_schema_view(
 urlpatterns = [
     path('swagger/', schema_view.with_ui(cache_timeout=0), name='schema-json'),
     path('admin/', admin.site.urls),
-    path('api/bmi/v1/', include('bmi_backend_app.urls')),
+    path('api/v1/', include('bmi_backend_app.urls')),
     path('api/', include('user.urls')),
 
 ]
